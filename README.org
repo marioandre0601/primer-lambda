@@ -1,0 +1,4 @@
+* Lambda example with python dependencies
+** External dependencies in a lambda layer
+** Dependency compilation using docker
+** Infraestructure defined using aws CDK

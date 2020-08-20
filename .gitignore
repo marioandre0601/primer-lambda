@@ -1,0 +1,14 @@
+# emacs files
+*~
+\#*\#
+.\#*
+
+# Macos files
+.DS_Store
+
+# aws files
+.aws-sam
+packaged.yaml
+
+# tsserver
+.log
