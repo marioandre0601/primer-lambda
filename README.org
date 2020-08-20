@@ -1,4 +1,43 @@
-* Lambda example with python dependencies
-** External dependencies in a lambda layer
-** Dependency compilation using docker
-** Infraestructure defined using aws CDK
+#+TITLE: aws LAMBDA:zero
+#+DESCRIPTION: Lambda setup with python dependecies installation
+
+* Por qué?
+
+** Instalar depdencias es posible ~pip install -t /dir~.
+** Dependecias compiladas? ~PIL~
+** Y aws SAM?
+
+* Objetivo
+
+** Conocer el entorno donde se ejecuta la aplicacion.
+** Script para instalar dependecias, e.g. python.
+** Desplegar usando aws cdk.
+* Conceptos
+
+** Makefile
+*** Ejemplo
+#+header: :eval no
+#+begin_src makefile
+  target … : prerequisites …
+	  recipe
+	  …
+	  …
+#+end_src
+*** Leyenda
+**** ~target~: archivo generado o una accion
+**** ~prerequisite~: un archivo de entrada
+**** ~recipe~: una accion
+
+** Ejemplo de directorio aws Lambda
+#+header: :eval no
+#+begin_src
+/
+├── opt
+│   ├── nodejs
+│   ├── python
+│   └── ruby
+└── var
+    └── task
+        ├── app.py
+        └── helpers.py
+#+end_src
